@@ -1,5 +1,10 @@
 # Tailwind 'on' variants.
 
+![Screenshot](screenshot.png)
+
+
+# What is this?
+
 This simple tailwind plugin will define 20 new variants that make it simple to select the Xth child, every Y children.
 
 Simple use-case: 
