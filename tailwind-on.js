@@ -1,7 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 
-const tailwindOf = plugin(
+const tailwindOn = plugin(
 
     function ({ addVariant, e }) {
 
@@ -125,4 +125,4 @@ const tailwindOf = plugin(
 )
 
 
-module.exports = tailwindOf
+module.exports = tailwindOn
