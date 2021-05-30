@@ -56,10 +56,40 @@ module.exports = {
     require('./plugins/tailwind-on'),
   ],
 
-
   variants: {
     extend: {
       margin: ['on-2\/3'],
+    },
+  },
+
+}
+```
+
+
+## Note
+
+By adding many variants, your CSS file will grow very large. Make sure you are only using the ones you need and make sure you
+purge any CSS too.
+
+## All Includes
+
+```
+const plugin = require('tailwindcss/plugin');
+
+module.exports = {
+
+  plugins: [
+    require('./plugins/tailwind-on'),
+  ],
+
+  variants: {
+    extend: {
+       backgroundColor: [
+        'on-1\/2', 'on-2\/2', 
+        'on-1\/3', 'on-2\/3', 'on-3\/3', 
+        'on-1\/4', 'on-2\/4', 'on-3\/4', 'on-4\/4', 
+        'on-1\/5', 'on-2\/5', 'on-3\/5', 'on-4\/5', 'on-5\/5',
+        'on-1\/6', 'on-2\/6', 'on-3\/6', 'on-4\/6', 'on-5\/6', 'on-6\/6', ],
     },
   },
 
